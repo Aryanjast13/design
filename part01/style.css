@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #0d0d0d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card{
+    width:28rem;
+    height:fit-content;
+    padding: 3rem;
+   background-color: #1d1d1d;
+
+   border-radius: .7rem;
+   text-align: center;
+}
+.center-pfp{
+    margin: 0 auto;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.pfp{
+    display: inline-block;
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+
+img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: -.3rem;
+}
+
+.title{
+    text-align: center;
+    padding-bottom: 1.6rem;
+}
+.name{
+    color: white;
+    margin-bottom: .5rem;
+}
+
+.address{
+    color: rgb(161, 247, 31);
+}
+
+.Info{
+    margin-bottom:1.8rem;
+    font-size: 1.1rem;
+    color:rgb(222, 219, 219);
+}
+
+.button-links{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.social-links{
+    padding:1rem 0 ;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #3b3b3b;
+    border: 0;
+    border-radius: .5rem;
+}
+
+@media  (width<450px) {
+    .profile-card{
+        padding: 2rem;
+    }
+}

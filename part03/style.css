@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 68, 66);
+}
+
+.product-card{
+    width:30rem;
+    height:20rem;
+    background-color:rgb(254, 254, 254);
+    display: flex;
+    border-radius:.5rem;
+}
+
+.product-image{
+    display: block;
+    width: 50%;
+    height:100%;
+    border-bottom-left-radius: .5rem;
+    border-top-left-radius: .5rem;
+    
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: .5rem;
+        border-top-left-radius: .5rem;
+    }
+}
+
+.product-details{
+    width: 50%;
+    height: 100%;
+    padding:1.2rem;
+   
+}
+
+.category{
+    font-family: "Montserrat", sans-serif;
+    font-size: .6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding-top: .5em;
+    padding-bottom: 1.2em;
+    color: rgb(179, 178, 177);
+}
+
+.product-name{
+    font-family: "Playfair", serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1.5rem;
+    color: rgb(77, 75, 75);
+    padding-bottom: .6em;
+}
+
+.description{
+   font-family: "Inter",sans-serif;
+   font-size:.7rem;
+   font-weight: 500;
+   line-height: 1rem;
+   color: rgb(138, 136, 136);
+   padding-bottom: 1.5em;
+}
+.pricing{
+    position: relative;
+    padding-bottom: 1rem;
+    .current-price{
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: rgb(31, 121, 81);
+    }
+    .original-price{
+             position: absolute;
+             font-size: .7rem;
+             text-decoration: line-through;
+             right: 3.5rem;
+             top: .4rem;
+             color: rgb(89, 92, 96);
+        }
+        
+    
+}
+.add-to-cart{
+   width: 100%;
+   padding: .6rem 0;
+   font-weight: 600;
+   color: white;
+   background-color: rgb(81, 148, 118);
+   border: none;
+   border-radius: .4rem;
+}
+
+
+@media (max-width:500px){
+
+    .product-card{
+        flex-direction: column;
+        height: 30rem;
+        width: 18rem;
+        
+    }
+    .product-image{
+        width: 100%;
+        height: 12rem;
+        border-top-right-radius: .5rem;
+        img{
+            object-position: center;
+            border-bottom-left-radius:0;
+            border-top-right-radius: .5rem;
+        }
+    }
+    .product-details{
+       width: 100%;
+      padding: 1.1rem;
+    }
+    .description{
+        font-size: .8rem;
+    }
+        .pricing {
+            position: relative;
+            .original-price {
+                position: absolute;
+                font-size: .7rem;
+                text-decoration: line-through;
+                right: 6.5rem;
+                top: .4rem;
+                
+            }
+}
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "Inter",sans-serif;
+}
+
+.container{
+    background: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Layout{
+    width: 1250px;
+    height: 100%;
+    background-color: #5d5b54;
+    padding: 3rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.8rem;
+    margin: 0 auto;
+    text-align: center;
+    .Info1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #242424;
+        }
+    
+        .Info2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #242424;
+        }
+        p{
+            padding: 0 20rem;
+            padding-top:1.5rem;
+            @media (max-width:1000px) {
+                padding: 0 2rem;
+            }
+        }
+        
+}
+
+.cards-layout{
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+    @media (max-width:1000px){
+        flex-direction: column;
+    }
+}
+.card-layout-child{
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.card-layout-child:nth-child(2){
+    gap: 2.8rem;
+}
+
+.card{
+   background-color: rgb(103, 104, 102); 
+   width: 21rem;
+   height: 15rem;
+   border-radius: .5rem;
+   position: relative;
+   overflow: hidden;
+ span {
+        display: block;
+        background: rgb(103, 208, 227);
+        width: 100%;
+        height: .3rem;
+    }
+
+}
+.card-part1{
+    padding: 0 2rem;
+    padding-top: 1.6rem;
+    h4 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            padding-bottom: .7rem;
+            color: rgb(30, 30, 30);
+            
+        }
+    
+        p {
+            font-size: .9rem;
+        color: rgb(183, 177, 177);
+        
+       }
+}
+
