@@ -1,0 +1,174 @@
+@media (min-width:420px) and (max-width:616px) {
+    .user-image{
+    width: clamp(4rem, 15vw, 5.3rem);
+    height: clamp(4rem, 15vw, 5.3rem);
+}
+}
+
+
+
+
+
+@media (min-width:617px) and (max-width:769px){
+    .user-image {
+            width:clamp(6rem,14vw ,7rem);
+            height: clamp(6rem, 14vw, 7rem);
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;}
+
+    
+        
+.Content {
+    width: 40rem;
+      padding-block: 1rem;
+      padding-inline:2.8rem;
+    h1 {
+            font-size: 3.8rem;
+            line-height: 4rem;
+            padding-bottom: 1rem;
+        }
+    
+        p {
+            font-size: 1.3rem;
+            padding-bottom: 2.5rem;
+            color: rgb(169, 161, 161);
+        }
+    .buttons{
+        flex-direction: row;
+        justify-content: center;
+        button{
+            font-size: 1.4rem;
+                padding: 1.2rem 1.8rem;
+        }
+      
+    }
+}
+
+.image-blocks {
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+
+    .image-block {
+        width: 17rem;
+    }
+}
+
+}
+
+@media (min-width:770px) and (max-width:1240px) {
+  .Content{
+    width:40rem;
+    justify-content: space-between;
+    h1{
+        font-size: 3.8rem;
+        line-height: 3.9rem;
+    }
+    p{
+        width: 100%;
+    }
+    padding: 1rem 2rem;
+   
+        .buttons {
+            flex-direction: row;
+            justify-content: center;
+    
+            button {
+                font-size: 1.4rem;
+                padding: 1.2rem 1.8rem;
+            }   }
+  }
+  .images{
+    gap:1rem;
+  }
+  .user-image {
+      width: clamp(7rem, 14vw, 11rem);
+      height: clamp(7rem, 14vw, 11rem);
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+  }
+
+
+  .image-blocks{
+     flex-wrap: wrap;
+    padding: 2rem 1rem;
+    .image-block{
+        width: 14rem;
+    }
+}
+ 
+}
+
+@media (min-width:1241px){
+    .section1{
+     
+        flex-wrap: nowrap;
+    }
+    .Content {
+        display: flex;
+        flex-direction: column;
+            width:32rem;
+            justify-content: center;
+            align-items: center;
+            order:2;
+    
+            h1 {
+                font-size: 4rem;
+                line-height: 4.3rem;
+                padding-bottom: 1.2rem;
+            }
+            p{
+                width: 100%;
+                font-size: 1rem;
+            }
+    
+            padding: 1rem 2rem;
+    
+            .buttons {
+                flex-direction: row;
+                justify-content: center;
+    
+                button {
+                    font-size: 1rem;
+                    padding: 1.2rem 1.4rem;
+                }
+            }
+        }
+    
+        .images {
+            gap: 1rem;
+        }
+        .images2{
+            order: 3;
+        }
+    
+        .user-image {
+            width: clamp(7.5rem, 12vw, 7rem);
+            height: clamp(7.5rem, 12vw, 7rem);
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+        }   
+    
+
+        .circle-parent{
+            margin-top: 7rem;
+        }
+
+        .image-blocks{
+    padding: 2rem 2.5rem;
+    .image-block{
+        width: 18rem;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+    }
+
+
+
